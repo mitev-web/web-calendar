@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Web Calendar :: My Meetings</title>
+    <link href="css/jquery-ui.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/web-calendar.js"></script>
+</head>
+
+<body>
+
+<div id="container">
+	<div id="config-box">
+		<a href="login.html">Logout</a></div>
+<header>
+    <ul class="menu">
+		<li class="link-button"><a href="contacts.html">My Contacts</a></li>
+		<li class="link-button active"><a href="meetings.html">My Meetings</a></li>
+		<li class="link-button"><a href="home.html">Home</a></li>
+	</ul>
+	<div class="config-button">
+	</div>
+	<span>Hello Pesho!</span>
+	<div class="spacer">
+&nbsp;</div>
+	<ul class="sub-menu">
+		<li id="call-category" class="link-button">Add new category</li>
+		<li class="link-button"><a href="add_meeting.html">Add new meeting</a></li>
+	</ul>
+  
+
+</header>
+
+	<div class="spacer">
+&nbsp;</div>
+	<div id="add-category" title="Add new Category">
+		<h1>Please add the contact information</h1>
+		<form id="formregister" accept-charset="UTF-8" action="home.html" method="post">
+			<dl>
+				<dt><label for="category-name">Category Name: </label>
+				<span class="required">*</span> </dt>
+				<dd>
+				<input id="category-name" class="form-text" maxlength="50" required size="60" type="text" value="default" />
+				</dd>
+				<dt><label for="category-description">Category Description:</label></dt>
+				<dd>
+				<input id="category-description" class="form-text" maxlength="50" size="50" type="text" value="" />
+				</dd>
+			</dl>
+			<input class="link-button" type="submit" value="Add Category" />
+		</form>
+	</div>
+	<h1>My Meetings</h1>
+	<table class="meetings">
+		<thead>
+			<tr>
+				<th>Date</th>
+				<th>Category</th>
+				<th>Description</th>
+				<th>Location</th>
+				<th>View Attendants</th>
+				<th>Actions</th>
+			</tr>
+		</thead>
+		<tr class="odd">
+			<td>2012-01-20 08:30:00</td>
+			<td>Personal</td>
+			<td>This is a good description for this Meeting</td>
+			<td>Sofia Lomsko, shose 45</td>
+			<td class="attendands"><a href="meeting_contacts.html">View All Participants</a><a href="#">Emil 
+			Petkov</a><a href="#">Ivanka Mutafova</a></td>
+			<td><a href="meeting_contacts.html">
+			<img alt="vview contacts for this meeting" src="images/view.png" title="view contacts for this meeting" /></a>
+			<a href="#">
+			<img alt="edit this contact" src="images/edit.png" /></a>
+			<a class="delete" href="#">
+			<img alt="delete this row" src="images/delete.png" /></a></td>
+		</tr>
+		<tr>
+			<td>2012-01-20 08:30:00</td>
+			<td>Business</td>
+			<td>This is a good description for this Meeting</td>
+			<td>Sofia Lomsko, shose 45</td>
+			<td class="attendands"><a href="#">Pesho Sekirata</a><a href="#">Nadia 
+			Koleva</a></td>
+			<td><a href="meeting_contacts.html">
+			<img alt="view contacts for this meeting" src="images/view.png" title="view contacts for this meeting" /></a>
+			<a href="#">
+			<img alt="edit this contact" src="images/edit.png" /></a>
+			<a class="delete" href="#">
+			<img alt="delete this row" src="images/delete.png" /></a></td>
+		</tr>
+		<tr class="odd">
+			<td>2012-01-20 08:30:00</td>
+			<td>Personal</td>
+			<td>This is a good description for this Meeting</td>
+			<td>Sofia Lomsko, shose 45</td>
+			<td class="attendands"><a href="meeting_contacts.html">View All Participants</a><a href="#">Emil 
+			Petkov</a><a href="#">Ivanka Mutafova</a></td>
+			<td><a href="meeting_contacts.html">
+			<img alt="vview contacts for this meeting" src="images/view.png" title="view contacts for this meeting" /></a>
+			<a href="#">
+			<img alt="edit this contact" src="images/edit.png" /></a>
+			<a class="delete" href="#">
+			<img alt="delete this row" src="images/delete.png" /></a></td>
+		</tr>
+		<tr>
+			<td>2012-01-20 08:30:00</td>
+			<td>Business</td>
+			<td>This is a good description for this Meeting</td>
+			<td>Sofia Lomsko, shose 45</td>
+			<td class="attendands"><a href="#">Pesho Sekirata</a><a href="#">Nadia 
+			Koleva</a></td>
+			<td><a href="meeting_contacts.html">
+			<img alt="view contacts for this meeting" src="images/view.png" title="view contacts for this meeting" /></a>
+			<a href="#">
+			<img alt="edit this contact" src="images/edit.png" /></a>
+			<a class="delete" href="#">
+			<img alt="delete this row" src="images/delete.png" /></a></td>
+		</tr>
+		<tr class="odd">
+			<td>2012-01-20 08:30:00</td>
+			<td>Personal</td>
+			<td>This is a good description for this Meeting</td>
+			<td>Sofia Lomsko, shose 45</td>
+			<td class="attendands"><a href="meeting_contacts.html">View All Participants</a><a href="#">Emil 
+			Petkov</a><a href="#">Ivanka Mutafova</a></td>
+			<td><a href="meeting_contacts.html">
+			<img alt="vview contacts for this meeting" src="images/view.png" title="view contacts for this meeting" /></a>
+			<a href="#">
+			<img alt="edit this contact" src="images/edit.png" /></a>
+			<a class="delete" href="#">
+			<img alt="delete this row" src="images/delete.png" /></a></td>
+		</tr>
+		<tr>
+			<td>2012-01-20 08:30:00</td>
+			<td>Business</td>
+			<td>This is a good description for this Meeting</td>
+			<td>Sofia Lomsko, shose 45</td>
+			<td class="attendands"><a href="#">Pesho Sekirata</a><a href="#">Nadia 
+			Koleva</a></td>
+			<td><a href="meeting_contacts.html">
+			<img alt="view contacts for this meeting" src="images/view.png" title="view contacts for this meeting" /></a>
+			<a href="#">
+			<img alt="edit this contact" src="images/edit.png" /></a>
+			<a class="delete" href="#">
+			<img alt="delete this row" src="images/delete.png" /></a></td>
+		</tr>
+		<tr class="odd">
+			<td>2012-01-20 08:30:00</td>
+			<td>Personal</td>
+			<td>This is a good description for this Meeting</td>
+			<td>Sofia Lomsko, shose 45</td>
+			<td class="attendands"><a href="meeting_contacts.html">View All Participants</a><a href="#">Emil 
+			Petkov</a><a href="#">Ivanka Mutafova</a></td>
+			<td><a href="meeting_contacts.html">
+			<img alt="vview contacts for this meeting" src="images/view.png" title="view contacts for this meeting" /></a>
+			<a href="#">
+			<img alt="edit this contact" src="images/edit.png" /></a>
+			<a class="delete" href="#">
+			<img alt="delete this row" src="images/delete.png" /></a></td>
+		</tr>
+		<tfoot>
+			<tr>
+				<td colspan="4"><a href="#">
+				<img class="pagination" src="images/first.png" title="Last" /></a><a href="#"><img class="pagination" src="images/prev.png" title="Previous" /></a><div class="page-number">
+					Page <input type="text" value="1" /> of 7</div>
+				<a href="#">
+				<img class="pagination" src="images/next.png" title="Next" /></a><a href="#"><img class="pagination" src="images/last.png" title="Last" /></a>
+				</td>
+				<td colspan="2" class="paging">Meetings per page:<select>
+				<option selected="" value="7">7</option>
+				<option value="15">15</option>
+				<option value="30">30</option>
+				</select><a href="#"><img class="refresh" alt="Refresh" src="images/refresh32px.png" title="Refresh" /></a>
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+
+
+<footer><div id="copyright">Copyright 2012© <a href="http://georgi-mitev.com">Georgi Mitev</a></div></footer>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Web Calendar :: Register</title>
+    <link href="css/jquery-ui.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/web-calendar.js"></script>
+</head>
+
+<body>
+
+<header class="header-guest">
+<span>Wellcome to your private Web Calendar!</span>
+</header>
+<div id="register-form">
+	<h1>Please complete the registration</h1>
+	<form id="formregister" accept-charset="UTF-8" action="home.html" method="post">
+		<dl>
+			<dt><label for="fname">Enter your first name:</label> </dt>
+			<dd>
+			<input id="fname" class="form-text" maxlength="50" size="50" type="text" value="" />
+			</dd>
+			<dt><label for="lname">Enter your last name: </label></dt>
+			<dd>
+			<input id="lname" class="form-text" maxlength="50" size="60" type="text" value="" />
+			</dd>
+			<dt><label for="user">Enter your username: </label>
+			<span class="required">*</span> </dt>
+			<dd>
+			<input id="user" class="form-text" maxlength="50" required size="60" type="text" value="" />
+			</dd>
+			<dt><label for="email">E-mail address: </label>
+			<span class="required">*</span> </dt>
+			<dd>
+			<input id="email" class="form-text" maxlength="50" required size="60" type="email" value="" />
+			</dd>
+			<dt><label for="email2">Repeat E-mail: </label>
+			<span class="required">*</span> </dt>
+			<dd>
+			<input id="email2" class="form-text" maxlength="50" required size="60" type="email" value="" />
+			</dd>
+			<dt><label for="pass">Enter your Password: </label>
+			<span class="required">*</span> </dt>
+			<dd>
+			<input id="pass" class="form-text" maxlength="50" required size="60" type="password" />
+			</dd>
+			<dt><label for="pass2">Repeat Password: </label>
+			<span class="required">*</span> </dt>
+			<dd>
+			<input id="pass2" class="form-text" maxlength="50" required size="60" type="password" />
+			</dd>
+		</dl>
+		<input class="link-button" type="submit" value="Register" />
+	</form>
+</div>
+
+<footer class="footer-guest">
+</footer>
+
+</body>
+
+</html>

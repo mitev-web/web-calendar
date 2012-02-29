@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Web Calendar :: Add New Contact</title>
+    <link href="css/jquery-ui.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/web-calendar.js"></script>
+</head>
+
+<body>
+
+<div id="container">
+	<div id="config-box">
+		<a href="login.html">Logout</a></div>
+<header>
+    <ul class="menu">
+		<li class="link-button active"><a href="contacts.html">My Contacts</a></li>
+		<li class="link-button"><a href="meetings.html">My Meetings</a></li>
+		<li class="link-button"><a href="home.html">Home</a></li>
+	</ul>
+	<div class="config-button">
+	</div>
+	<span>Hello Pesho!</span>
+	<div class="spacer">
+&nbsp;</div>
+	<ul class="sub-menu">
+		<li class="link-button"><a href="add_contact.html">Add new contact</a></li>
+	</ul>
+  
+
+</header>
+
+	<h1>Add New Contact</h1>
+	<div id="register-form" class="left">
+		<h1>Please add the contact information</h1>
+		<form id="formregister" accept-charset="UTF-8" action="home.html" method="post">
+			<dl>
+				<dt><label for="contact-firstname">Contact First Name: </label>
+				<span class="required">*</span> </dt>
+				<dd>
+				<input id="contact-firstname" class="form-text" maxlength="50" required size="60" type="text" value="default" />
+				</dd>
+				<dt><label for="contact-lastname">Contact Last Name:</label><span class="required">*</span>
+				</dt>
+				<dd>
+				<input id="contact-lastname" class="form-text" maxlength="50" required size="50" type="text" value="" />
+				</dd>
+				<dt><label for="contact-email">Contact Email</label> </dt>
+				<dd>
+				<input id="contact-email" class="form-text" maxlength="50" size="60" type="email" value="" />
+				</dd>
+				<dt><label for="contact-phone">Contact Phone: </label></dt>
+				<dd>
+				<input id="contact-phone" class="form-text" maxlength="50" size="60" type="email" value="" />
+				</dd>
+				<dt><label for="contact-note">Additional Note: </label></dt>
+				<dd>
+				<input id="contact-note" class="form-text" maxlength="50" size="60" type="email" value="" />
+				</dd>
+			</dl>
+			<input class="link-button" type="submit" value="Add Contact" />
+		</form>
+	</div>
+<footer><div id="copyright">Copyright 2012© <a href="http://georgi-mitev.com">Georgi Mitev</a></div></footer>
+</div>
+
+</body>
+
+</html>

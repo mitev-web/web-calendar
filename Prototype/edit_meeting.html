@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title>Web Calendar :: Edit Meeting</title>
+<link href="css/jquery-ui.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/web-calendar.js"></script>
+</head>
+
+<body>
+
+<div id="container">
+	<div id="config-box">
+		<a href="login.html">Logout</a></div>
+<header>
+    <ul class="menu">
+		<li class="link-button"><a href="contacts.html">My Contacts</a></li>
+		<li class="link-button active"><a href="meetings.html">My Meetings</a></li>
+		<li class="link-button"><a href="home.html">Home</a></li>
+	</ul>
+	<div class="config-button">
+	</div>
+	<span>Hello Pesho!</span>
+	<div class="spacer">
+&nbsp;</div>
+	<ul class="sub-menu">
+		<li class="link-button"><a href="home.html">Add new category</a></li>
+		<li class="link-button"><a href="contacts.html">Add new meeting</a></li>
+	</ul>
+  
+
+</header>
+
+	<div class="spacer">
+&nbsp;</div>
+	<div id="add-meeting" class="left" style="display: block" title="Add new Meeting">
+		<h1>Please add the meeting information</h1>
+		<form id="formregister" accept-charset="UTF-8" action="home.html" method="post">
+			<dl>
+				<dt><label for="meeting-category">Meeting Category: </label>
+				</dt>
+				<dd>
+				<input id="meeting-category" class="form-text" maxlength="50" required="" size="60" type="text" value="default" />
+				</dd>
+				<dt><label for="meeting-desc">Meeting Description:</label><span class="required">*</span>
+				</dt>
+				<dd>
+				<input id="meeting-desc" class="form-text" maxlength="50" size="50" type="text" value="" />
+				</dd>
+				<dt><label for="meeting-date">Meeting Date</label><span class="required">*</span>
+				</dt>
+				<dd>
+				<input id="meeting-date" class="form-text" maxlength="50" size="60" type="text" value="12/12/2012" />
+				</dd>
+				<dt><label for="meeting-location">Meeting Location</label></dt>
+				<dd>
+				<input id="meeting-location" class="form-text" maxlength="50" required="" size="60" type="text" value="" />
+				</dd>
+				<dt><label for="meeting-attendants">Meeting Attandants: </label>
+				<span class="required">*</span> </dt>
+				<dd>
+				<input id="meeting-attendants" class="form-text" maxlength="50" required="" size="60" type="email" value="" />
+				</dd>
+			</dl>
+			<input class="link-button" type="submit" value="Add Meeting" />
+		</form>
+	</div>
+<footer><div id="copyright">Copyright 2012© <a href="http://georgi-mitev.com">Georgi Mitev</a></div></footer>
+</div>
+
+</body>
+
+</html>
