@@ -1,0 +1,25 @@
+﻿@using WebCalendar;
+
+
+@{
+    ViewBag.Title = "Wellcome";
+}
+
+<header class="header-guest">
+<span>Wellcome to your private Web Calendar!</span>
+</header>
+<div id="login-form">
+<h2>Hello Stranger! Please login or register!</h2>
+	<div class="description">To login into your Web Calendar, type your credentials below.</div>
+	<form accept-charset="UTF-8" action="home.html" method="post">
+		<p>Username </p>
+		<input class="form-text" maxlength="128" name="mail" size="60" type="text" value="" />
+		<p>Password </p>
+		<input class="form-text" maxlength="128" name="pass" size="60" type="password" />
+	<div class="description">Don&#39;t have an account? @Html.ActionLink("Register", "Register", "Account").</div>
+		<input class="link-button" type="submit" value="Log in" />
+	</form>
+</div>
+
+<footer class="footer-guest">
+</footer>

@@ -1,0 +1,41 @@
+﻿@model WebCalendar.DAL.Contact
+
+<tr @if (Model != null) {
+    @:data-pkey="@Model.ID"
+}>
+    <td>
+        @Html.EditorFor(model => model.Email)
+        @Html.ValidationMessageFor(model => model.Email)
+    </td>
+    <td>
+        @Html.EditorFor(model => model.FirstName)
+        @Html.ValidationMessageFor(model => model.FirstName)
+    </td>
+    <td>
+        @Html.EditorFor(model => model.LastName)
+        @Html.ValidationMessageFor(model => model.LastName)
+    </td>
+    <td>
+        @Html.EditorFor(model => model.Phone)
+        @Html.ValidationMessageFor(model => model.Phone)
+    </td>
+    <td>
+        @Html.EditorFor(model => model.Address)
+        @Html.ValidationMessageFor(model => model.Address)
+    </td>
+    <td>
+        @Html.EditorFor(model => model.Note)
+        @Html.ValidationMessageFor(model => model.Note)
+    </td>
+    <td>
+        @Html.DropDownList("UserID", String.Empty)
+        @Html.ValidationMessageFor(model => model.UserID)
+    </td>
+    <td>
+@if (ViewContext.RouteData.Values["Action"].ToString() == "Edit") {
+        <button class="editRow">Save</button><button class="cancelEditRow">Cancel</button>
+} else {
+        <button class="createRow">Create</button><button class="cancelCreateRow">Cancel</button>
+}
+    </td>
+</tr>

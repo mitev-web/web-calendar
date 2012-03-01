@@ -1,0 +1,53 @@
+﻿@using WebCalendar;
+@model WebCalendar.Models.LogOnModel
+
+
+@{
+    ViewBag.Title = "Wellcome";
+}
+
+<header class="header-guest">
+  <span>
+    Wellcome to your private Web Calendar!
+  </span>
+</header>
+<div id="login-form">
+  <h2>
+    Hello Stranger! Please login or register!
+  </h2>
+
+
+  @using (Html.BeginForm())
+  {
+        <div class="description">
+          To login into your Web Calendar, type your credentials below.
+        </div>
+        @Html.ValidationSummary(true, "Login was insuccessful. Please fix yourself!")
+        <p>
+          @Html.LabelFor(m => m.UserName)
+        </p>
+
+        @Html.TextBoxFor(m => m.UserName, new { @class = "form-text" })
+
+        <p>
+          @Html.LabelFor(m => m.Password)
+        </p>
+
+        @Html.TextBoxFor(m => m.Password, new { @class = "form-text" })
+        @Html.LabelFor(m => m.RememberMe)
+        @Html.CheckBoxFor(m => m.RememberMe)
+               
+        <input class="link-button" type="submit" value="Log in" />
+                    
+
+         
+  }
+  <div class="description">
+    Don&#39;t have an account? @Html.ActionLink("Register", "Register", "Account").
+  </div>
+
+</div>
+
+
+<footer class="footer-guest">
+</footer>

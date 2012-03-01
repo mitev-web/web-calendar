@@ -1,0 +1,86 @@
+﻿@model WebCalendar.Models.RegisterModel
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<header class="header-guest">
+  <span>
+    Wellcome to your private Web Calendar!
+  </span>
+</header>
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+
+@using (Html.BeginForm())
+{
+    
+
+    
+    <div id="register-form">
+      <h1>
+        Please complete the registration
+      </h1>
+    <p class="message-info">
+        Passwords are required to be a minimum of @Membership.MinRequiredPasswordLength characters in length.
+    </p>
+      <div class="error">
+
+        @Html.ValidationSummary(true, "Register was unsuccessful. Please correct the errors and try again.")
+        @Html.ValidationMessageFor(m => m.FirstName)
+        @Html.ValidationMessageFor(m => m.LastName)
+        @Html.ValidationMessageFor(m => m.UserName)
+        @Html.ValidationMessageFor(m => m.Password)
+        @Html.ValidationMessageFor(m => m.Email)
+      
+      </div>
+      <dl>
+        <dt>@Html.LabelFor(m => m.FirstName)</dt>
+        <br />
+        <dd>
+          @Html.TextBoxFor(m => m.FirstName)
+
+        </dd>
+        <br />
+        <dt>@Html.LabelFor(m => m.LastName)</dt>
+        <br />
+        <dd>
+          @Html.TextBoxFor(m => m.LastName)
+
+        </dd>
+        <br />
+        <dt>@Html.LabelFor(m => m.UserName)</dt>
+        <br />
+        <dd>
+          @Html.TextBoxFor(m => m.UserName)
+
+        </dd>
+        <br />
+        <dt>@Html.LabelFor(m => m.Email)</dt>
+        <br />
+        <dd>
+          @Html.TextBoxFor(m => m.Email)
+
+        </dd>
+        <br />
+        <dt>@Html.LabelFor(m => m.Password)</dt>
+        <br />
+        <dd>
+          @Html.PasswordFor(m => m.Password)
+
+        </dd>
+        <br />
+        <dt>@Html.LabelFor(m => m.ConfirmPassword)</dt>
+        <br />
+        <dd>
+          @Html.PasswordFor(m => m.ConfirmPassword)
+         
+        </dd>
+        <br />
+      </dl>
+      <input class="link-button" type="submit" value="Register" />
+    </div>
+}
+
+<footer class="footer-guest"></footer>
